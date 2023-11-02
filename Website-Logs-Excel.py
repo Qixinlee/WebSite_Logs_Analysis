@@ -1,13 +1,16 @@
-# Author Qixinlee
- 
+"""
+Author: Qixinlee
+Description: 这是一个Web网站日志分析工具
+""" 
+
 import re
 import pandas as pd
 
 # 定义日志文件路径
-log_file_path = "D:/web/www.qixinlee.com_nginx.log"
+log_file_path = "D://web//www.qixinlee.com_nginx.log"
 
 # 定义Excel文件路径
-excel_file_path = "D:/web/www.qixinlee.com_nginx.xlsx"
+excel_file_path = "D://web//www.qixinlee.com_nginx.xlsx"
 
 # 定义正则表达式来解析日志文件
 log_pattern = r'(?P<host>\S+) (?P<identity>\S+) (?P<user>\S+) \[(?P<time>.*?)\] "(?P<request>.*?)" (?P<status>\d+) (?P<size>\S+) "(?P<referrer>.*?)" "(?P<user_agent>.*?)"'
